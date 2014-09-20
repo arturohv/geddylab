@@ -1,7 +1,7 @@
 <div class="hero-unit">
   <form id="book-form" class="form-horizontal" action="/books" method="POST">
     <fieldset>
-      <legend>Create a new Book</legend>
+      <legend>Agregar Nuevo Libro</legend>
       <% if(params.errors) { %>
       <div class="control-group">
         <ul>
@@ -15,7 +15,8 @@
       <%- partial('form', {book: params}) %>
 
       <div class="form-actions">
-        <%- contentTag('input', 'Add', {type: 'submit', class: 'btn btn-primary'}) %>
+        <%- contentTag('input', 'Agregar', {type: 'submit', class: 'btn btn-primary'}) %>
+        <%- linkTo('Cancelar', bookPath(''), {class: 'btn'}); %>
       </div>
     </fieldset>
   </form>
