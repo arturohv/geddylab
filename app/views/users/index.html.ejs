@@ -1,6 +1,6 @@
 <div class="hero-unit">
-  <h2>All Users</h2>
-  <%- linkTo('Create a new User', addUserPath, {class: 'btn pull-right'}); %>
+  <h2>Lista de Usuarios</h2>
+  <%- linkTo('Crear nuevo usuario', addUserPath, {class: 'btn pull-right'}); %>
 </div>
 
 <div id="users-list">
@@ -9,9 +9,6 @@
   <div class="row list-item" id="user-<%= users[i].id; %>">
     <div class="span8">
       <h3><%- linkTo(users[i].login, userPath(users[i].id)); %></h3>
-    </div>
-    <div class="span4">
-      <h3><i class="icon-list-alt"></i><%= users[i].id; %></h3>
     </div>
   </div>
 <% } %>
