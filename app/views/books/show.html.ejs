@@ -1,5 +1,6 @@
 <div class="hero-unit">
   <h2 class="title"><%= book.title %></h2>
-  <%- linkTo('Editar', editBookPath(params.id), {class: 'btn pull-right'}); %>  
+  <%- linkTo('Editar', editBookPath(params.id), {class: 'btn pull-right'}); %>
+  <%- linkTo('Regresar a la lista', bookPath(''), {class: 'btn pull-right'}); %>  
 </div>
 

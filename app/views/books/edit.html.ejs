@@ -17,6 +17,7 @@
       <div class="form-actions">
         <%- contentTag('input', 'Guardar', {type: 'submit', class: 'btn btn-primary'}) %>
         <%- contentTag('button', 'Eliminar', {type: 'submit', formaction: '/books/' + params.id + '?_method=DELETE', formmethod: 'POST', class: 'btn btn-danger'}) %>
+        <%- linkTo('Cancelar', bookPath(''), {class: 'btn pull-right'}); %>
       </div>
     </fieldset>
   </form>
